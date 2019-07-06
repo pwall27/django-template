@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from app.views import APILoginView, APIRefreshView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/v1/auth/login/', APILoginView.as_view(), name='token_obtain_pair'),
+    path('api/v1/auth/refresh/', APIRefreshView.as_view(), name='token_refresh'),
 ]
