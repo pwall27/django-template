@@ -70,6 +70,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'src.wsgi.application'
 
+AUTH_USER_MODEL = 'app.User'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
