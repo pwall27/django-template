@@ -8,6 +8,13 @@ verify_ssl = true
 [packages]
 django = "*"
 djangorestframework = "*"
+django-environ = "*"
+django-extensions = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+djangorestframework-simplejwt = "*"
+mixer = "*"
 
 [requires]
 python_version = "3.7"
